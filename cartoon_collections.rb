@@ -21,5 +21,5 @@ def find_the_cheese(array)
   cheese_types = ["cheddar", "gouda", "camembert"]
   overlap = array & cheese_types
   return "nil" if overlap.empty?
-  binding.pry
+  
 end
