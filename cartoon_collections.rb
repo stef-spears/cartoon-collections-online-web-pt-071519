@@ -1,3 +1,5 @@
+require 'pry'
+
 def roll_call_dwarves(dwarves)
   dwarves.each_with_index{ |dwarf, i| puts "#{i+1}. #{dwarf}" }
 end
@@ -19,4 +21,5 @@ def find_the_cheese(array)
   cheese_types = ["cheddar", "gouda", "camembert"]
   overlap = array & cheese_types
   return "nil" if overlap.empty?
+  binding.pry
 end
