@@ -17,5 +17,6 @@ end
 
 def find_the_cheese(array)
   cheese_types = ["cheddar", "gouda", "camembert"]
-  cheese_types.include? array.any?
+  overlap = array & cheese_types
+  return "nil" if overlap.empty?
 end
