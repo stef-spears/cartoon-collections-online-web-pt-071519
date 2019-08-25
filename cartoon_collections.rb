@@ -22,6 +22,6 @@ def find_the_cheese(array)
   overlap = array & cheese_types
   if overlap.empty? == true
     return nil
-  #else print overlap[0]
+  else print overlap[0]
   end
 end
